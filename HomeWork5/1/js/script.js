@@ -9,6 +9,6 @@ var sortedArray = arr.sort(function(a, b){
     return a.age - b.age;
 });
 
-for(var i in sortedArray) {
-    console.log(arr[i].name + ' : ' + arr[i].age);
-}
+sortedArray.forEach(function(item) {
+    console.log(item.age + ' ' + item.name);
+  });
