@@ -15,8 +15,11 @@ function showCurrentTime(){
 btn.addEventListener('click', function(e){
   var alarm = setInterval(function(){
      if(setTime.value == getCurrentTime()){
+        currentTime.classList.remove('show');
+        currentTime.classList.add('hide');
         alert('TIME TO WORK!');
         clearInterval(alarm);
+        clearInterval(time);
      }
   },1000);
 });
