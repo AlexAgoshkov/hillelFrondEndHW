@@ -1,0 +1,21 @@
+.p {
+      display: none;
+  }
+  .link-container {
+    display: inline-block;
+    border: 2px solid;
+    width: 50%;
+    height: 30px;
+  }
+
+  .link-container:hover {
+    background-color: yellow;
+  }
+
+  .profile {
+    border: 4px solid;
+    background-color: blueviolet;
+    position: absolute;
+    right:100px;
+    top: 40px;
+}
